@@ -1,4 +1,4 @@
-# Contextual Based Cyberbullying Detection with Class Weight based improved performance
+# CBT-DRAB: Context Based Toxicity Detection with Reduced AI Bias
 Western Sydney University CACE 2025 Capstone Project for Cyber Security and Behaviour Bachelor Students
 
 # Contributors
