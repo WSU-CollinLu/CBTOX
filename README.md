@@ -5,7 +5,7 @@ Western Sydney University CACE 2025 Capstone Project for Cyber Security and Beha
 (2025) Anita Chun, Collin Lu, Luke Armitage-Masi, Jasmine Flora, Uswah Rahman
 
 # Western Sydney University
-![Image of Western Sydney University's Cybersecurity Aid and Community Engagement program]
+![Image of Western Sydney University's Cybersecurity Aid and Community Engagement program](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/WSU.png)
 
 # Problem Statement
 Despite growing research into online toxicity, accurate detection remains a significant challenge due to 
@@ -21,19 +21,19 @@ Therefore, there is a need for a domain-specific AI framework that integrates be
 contextual understanding to improve the detection and management of toxic behaviour in online gaming. 
 
 # Related Works
-- **Singh 2022**
+- **Singh, 2022:**
   Sentiment Analysis of Dota 2 videogame chat in context of Cyber-bullying MSc Research Project Masters of Science in Data Analytics
 
-- **Fesalbon et al.,2024**
+- **Fesalbon et al.,2024:**
    Fine-tuning Pre-trained Language Models to Detect In-game Trash Talks
 
-- **Fortunatus et al., 2020**
+- **Fortunatus et al., 2020:**
   Combining textual features to detect cyberbullying in social media posts
 
-- **Gandolfi & Ferdig, 2021**
+- **Gandolfi & Ferdig, 2021:**
    Sharing dark sides on game service platforms: Disruptive behaviors and toxicity in DOTA2 through a platform lens
 
-- J.Angel Diaz-Garcia & Carvalho, 2925
+- **J.Angel Diaz-Garcia & Carvalho, 2025:**
    A Literature Review of Textual Cyber Abuse Detection Using Cutting‐Edge Natural Language Processing Techniques: Language Models and Large Language Models
 
 # Methodology
@@ -53,4 +53,11 @@ Design Phases
 - Phase 3: Machine Learning Model Development
 - Phase 4: Integration
 
+We train the DeBertav2 model with an initial dataset from SafeTalk and fine-tune the model using a Dota-2 specific dataset from Hugging Face. We will compare the accuracy and precision of the AI model in detecting Dota-2 toxicity utilising the original 
+# Data Analysis
+Using SMOTE inspired text augmentation, we created a new data set
+![Pie charts showing the initial data set message distribution and the augmented data set](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/dataBalancing.png)
+
 # Results
+
+
