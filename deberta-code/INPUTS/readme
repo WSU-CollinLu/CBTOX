@@ -1,0 +1,10 @@
+Place your files here:
+
+Training data for the training of the dataset:
+> train.csv
+
+Validation data to measure detection accuracy
+> val.csv
+
+Testing data to evaluate new data
+> test.csv
