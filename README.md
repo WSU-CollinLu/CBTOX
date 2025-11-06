@@ -70,7 +70,7 @@ decline in training loss over the five epochs. However,
 the augmented model maintains a consistently lower 
 loss value across all epochs, demonstrating faster and 
 more stable convergence due to exposure to diverse 
-and balanced training samples.
+and balanced training samples. 
 ![Training Loss graph depicting the augmented model's decrease in training loss per epoch compared to baseline](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/trainingLoss.png)
 
 **Validation Loss (Baseline vs Augmented)**
@@ -88,7 +88,7 @@ outperforming the baseline in every iteration. By the
 fifth epoch, the augmented model achieved a notably 
 higher F1 score, confirming balanced improvements 
 in precision and recall across all toxicity levels. 
-~[F1 Score Graph depicting the augmented model's increase in performance per epoch compared to baseline](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/f1Score.png)
+![F1 Score Graph depicting the augmented model's increase in performance per epoch compared to baseline](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/f1Score.png)
 
 # Conclusion
 This study successfully developed and evaluated a transformer-based model, DeBERTa, for detecting 
