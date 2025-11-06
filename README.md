@@ -5,7 +5,7 @@ Western Sydney University CACE 2025 Capstone Project for Cyber Security and Beha
 (2025) Anita Chun, Collin Lu, Luke Armitage-Masi, Jasmine Flora, Uswah Rahman
 
 # Western Sydney University
-![Image of Western Sydney University's Cybersecurity Aid and Community Engagement program](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/WSU.png)
+![Logo of Western Sydney University](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/WSU.png) ![Image of Western Sydney University's Cybersecurity Aid and Community Engagement program](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/westernCACE.png)
 
 # Problem Statement
 Despite growing research into online toxicity, accurate detection remains a significant challenge due to 
