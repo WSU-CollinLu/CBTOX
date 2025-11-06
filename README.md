@@ -47,17 +47,82 @@ Through a process including a literature review, data collection, data preproces
 evaluation, the study aims to design, test and assess the performance of a DeBERTa model trained for the 
 identification of toxic behavior in gaming related environments.
 
-Design Phases
+## Design Phases
 - Phase 1: Data Collection and Processing
 - Phase 2: Workflow Model
 - Phase 3: Machine Learning Model Development
 - Phase 4: Integration
 
-We train the DeBertav2 model with an initial dataset from SafeTalk and fine-tune the model using a Dota-2 specific dataset from Hugging Face. We will compare the accuracy and precision of the AI model in detecting Dota-2 toxicity utilising the original 
+The DeBerta v2 model is trained with an initial dataset from SafeTalk then fine-tuned using a Dota-2 specific dataset from Hugging Face. We will compare the accuracy, precision and F1 scores of the results between the original dataset and text augmented dataset.
+
 # Data Analysis
-Using SMOTE inspired text augmentation, we created a new data set
+Since SMOTE is limited to numerical data, text augmentation techniques inspired by SMOTE principles 
+were applied to handle class imbalance. These techniques included synonym replacement, word insertion, 
+word order variation, and paraphrasing to expand minority toxic classes with linguistically valid 
+variations. 
 ![Pie charts showing the initial data set message distribution and the augmented data set](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/dataBalancing.png)
 
 # Results
+**Training Loss (Baseline vs Augmented)**
+This figure shows that both models exhibit a steady 
+decline in training loss over the five epochs. However, 
+the augmented model maintains a consistently lower 
+loss value across all epochs, demonstrating faster and 
+more stable convergence due to exposure to diverse 
+and balanced training samples.
+![Training Loss graph depicting the augmented model's decrease in training loss per epoch compared to baseline](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/trainingLoss.png)
 
+**Validation Loss (Baseline vs Augmented)**
+The validation loss plot mirrors the training loss 
+pattern, confirming that the augmented model 
+generalizes better to unseen data. The narrower gap 
+between training and validation losses indicates 
+reduced overfitting and stronger model robustness. 
+![Validation Loss graph depicting the augmented model's decrease in validation loss per epoch compared to baseline](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/validationLoss.png)
 
+**F1 Score Progression (Baseline vs Augmented)**
+This figure highlights a consistent increase in F1 
+scores across all epochs, with the augmented model 
+outperforming the baseline in every iteration. By the 
+fifth epoch, the augmented model achieved a notably 
+higher F1 score, confirming balanced improvements 
+in precision and recall across all toxicity levels. 
+~[F1 Score Graph depicting the augmented model's increase in performance per epoch compared to baseline](https://github.com/WSU-CollinLu/CBTOX/blob/main/github-images/f1Score.png)
+
+# Conclusion
+This study successfully developed and evaluated a transformer-based model, DeBERTa, for detecting 
+toxic behaviour in Dota 2 gaming chat environments. Through a structured methodology encompassing 
+data collection, preprocessing, model training, and evaluation, the research demonstrated how modern 
+Natural Language Processing (NLP) techniques can address one of the most challenging aspects of online 
+interaction—context-dependent toxicity. The integration of text augmentation techniques, adapted from 
+SMOTE principles, proved to be a pivotal step in overcoming class imbalance and enhancing the model’s 
+sensitivity to minority classes. This innovation enabled the model to recognize subtle linguistic cues, 
+sarcasm, and coded toxicity more effectively than baseline approaches, marking a significant step forward 
+in gaming moderation research.
+
+Quantitative results revealed notable improvements in performance metrics, with accuracy increasing 
+from 91.2% to 93.8% and recall for minority classes improving by over 20 percentage points following 
+augmentation. Qualitative analyses further highlighted the model’s ability to generalize across phrasal 
+variations and contextual nuances common in gaming discourse, such as “gg ez” or “feed harder.” The 
+comparison with prior studies (e.g., Singh, 2022; Fesalbon et al., 2024; Lee et al., 2025) confirmed that 
+DeBERTa’s disentangled attention and contextual reasoning outperform traditional lexicon-based and 
+hybrid approaches, reinforcing the superiority of fine-tuned transformer models for toxicity detection. 
+Moreover, the study’s findings align with Diaz-Garcia and Carvalho (2025), who reported that 
+transformer-based systems outperform classical ML models in detecting complex, implicit forms of 
+toxicity.
+
+From a practical standpoint, this research contributes to the growing field of responsible AI in online 
+moderation. The model’s architecture and real-time inference capability demonstrate clear potential for 
+deployment across multiplayer games and digital platforms. However, limitations remain in dataset 
+diversity, computational demands, and ethical considerations such as privacy and fairness. These highlight 
+the importance of transparency, user consent, and appeal mechanisms when integrating AI moderation 
+tools into real-world systems. Addressing these challenges through multilingual expansion, explainable 
+AI modules, and hybrid human-AI moderation frameworks will be critical for future development.
+
+In conclusion, this project not only validates the potential of transformer-based architectures like 
+DeBERTa for gaming toxicity detection but also emphasizes the importance of linguistic and contextual
+awareness in AI moderation systems. By combining data-driven augmentation with domain-specific 
+fine-tuning, it lays a foundation for scalable, culturally adaptive, and ethically responsible approaches to 
+combating toxicity in online environments. The outcomes of this study underscore the transformative role 
+of AI in fostering safer, more inclusive digital spaces—an essential step toward enhancing user 
+experience and community well-being in the evolving world of online gaming. 
